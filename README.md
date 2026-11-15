@@ -83,7 +83,7 @@ The build also prints the visible word count for each language. The target is ro
 
 Rules for the content:
 
-- Do not add facts that the family did not give. Do not add amounts in grams or cups: the scoop volume is not known.
+- Write as the family ("we"). Do not add facts that the family did not give. Do not add amounts in grams or cups: the scoop volume is not known.
 - Keep the four cautions in the "Please remember" card. Keep the on-lead greeting and slipper warnings visible, not only in an accordion.
 - Valencian follows the AVL norms. Keep the Valencian forms, for example `esta`, `ací`, `seua`, `protegix`, `siga`, `conéixer`, `gitar-se`, `arrere`, `roig`.
 - Spanish uses Spain usage, for example `pienso`, `grifo`, `zapatilla`.

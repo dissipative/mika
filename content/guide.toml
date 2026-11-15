@@ -250,10 +250,10 @@ val = "Més sobre els seus passejos"
 ru = "Подробнее о прогулках"
 
 [walks.more]
-en = "Walks sometimes last 2–3 hours. She enjoys investigating trees for mice, relaxing on the grass and chewing sticks. Her family sometimes lets her off lead in suitable open areas, where she stays close and plays well."
-es = "A veces los paseos duran 2–3 horas. Le gusta buscar ratones en los árboles, descansar en la hierba y mordisquear palos. Su familia a veces la suelta en zonas abiertas adecuadas, donde se queda cerca y juega bien."
-val = "De vegades els passejos duren 2–3 hores. Li agrada buscar ratolins als arbres, descansar en la gespa i rosegar pals. La seua família de vegades la deixa solta en zones obertes adequades, on es queda a prop i juga bé."
-ru = "Иногда прогулки длятся 2–3 часа. Любит искать мышей у деревьев, отдыхать на траве и грызть палки. Семья иногда спускает её с поводка в подходящих открытых местах — она держится рядом и хорошо играет."
+en = "Walks sometimes last 2–3 hours. She enjoys investigating trees for mice, relaxing on the grass and chewing sticks. We sometimes let her off lead, for example in a field with clear boundaries, where she doesn't run off."
+es = "A veces los paseos duran 2–3 horas. Le gusta buscar ratones en los árboles, descansar en la hierba y mordisquear palos. A veces la soltamos, por ejemplo en un campo con límites claros, donde no se escapa."
+val = "De vegades els passejos duren 2–3 hores. Li agrada buscar ratolins als arbres, descansar en la gespa i rosegar pals. De vegades la deixem solta, per exemple en un camp amb límits clars, on no s'escapa."
+ru = "Иногда прогулки длятся 2–3 часа. Любит искать мышей у деревьев, отдыхать на траве и грызть палки. Мы иногда отпускаем её с поводка, например на поле — где есть понятные границы, и она не убегает."
 
 [walks.photo_alt]
 en = "Mika in a red harness, lying on the grass next to a larger grey and tan dog."
@@ -328,10 +328,10 @@ val = "Si protegix una sabatilla"
 ru = "Если она охраняет тапок"
 
 [home.slipper]
-en = "She sometimes takes a slipper to her bed and guards it, usually without damaging it. **Don't take it by force.** What has worked for her family: bring her food bowl to her bed, so she leaves the slipper by herself."
-es = "A veces se lleva una zapatilla a su cama y la protege, normalmente sin romperla. **No se la quites a la fuerza.** Lo que le ha funcionado a su familia: acercarle su cuenco de comida a la cama para que deje la zapatilla por sí misma."
-val = "De vegades s'emporta una sabatilla al llit i la protegix, normalment sense trencar-la. **No li la lleves a la força.** El que ha funcionat a la seua família: acostar-li el bol del menjar al llit perquè deixe la sabatilla per si mateixa."
-ru = "Иногда она уносит тапок на лежанку и охраняет его, но обычно не портит. **Не отбирайте его силой.** Её семье помогал такой приём: поднести миску с едой к лежанке, чтобы она сама оставила тапок."
+en = "She sometimes takes a slipper to her bed and guards it, usually without damaging it. **Don't take it by force.** What works for us: bring her food bowl to her bed, so she leaves the slipper by herself."
+es = "A veces se lleva una zapatilla a su cama y la protege, normalmente sin romperla. **No se la quites a la fuerza.** Lo que nos funciona: acercarle su cuenco de comida a la cama para que deje la zapatilla por sí misma."
+val = "De vegades s'emporta una sabatilla al llit i la protegix, normalment sense trencar-la. **No li la lleves a la força.** El que ens funciona: acostar-li el bol del menjar al llit perquè deixe la sabatilla per si mateixa."
+ru = "Иногда она уносит тапок на лежанку и охраняет его, но обычно не портит. **Не отбирайте его силой.** Нам помогает такой приём: поднести миску с едой к лежанке, чтобы она сама оставила тапок."
 
 [home.photo_alt]
 en = "Mika lying in a hallway at home, with a cat sitting nearby."
@@ -361,13 +361,7 @@ val = "Estat de salut"
 ru = "Состояние здоровья"
 
 [health.status]
-en = "According to her family, she is healthy: no known allergies, regular medication or special medical care. She is spayed and has a veterinary passport with the necessary vaccinations and preventive treatments."
-es = "Según su familia, está sana: sin alergias conocidas, medicación habitual ni cuidados médicos especiales. Está esterilizada y tiene pasaporte veterinario con las vacunas y los tratamientos preventivos necesarios."
-val = "Segons la seua família, està sana: sense al·lèrgies conegudes, medicació habitual ni cures mèdiques especials. Està esterilitzada i té passaport veterinari amb les vacunes i els tractaments preventius necessaris."
-ru = "По словам семьи, Мика здорова: известных аллергий, постоянных лекарств и особого медицинского ухода нет. Она стерилизована, у неё есть ветеринарный паспорт с необходимыми прививками и профилактическими обработками."
-
-[health.note]
-en = "This guide does not replace veterinary advice."
-es = "Esta guía no sustituye el consejo de un veterinario."
-val = "Esta guia no substituïx el consell d'un veterinari."
-ru = "Эта памятка не заменяет консультацию ветеринара."
+en = "As far as we can see, Mika is in excellent health: no known allergies, no regular medication and no special medical care. She is spayed and has a veterinary passport with the necessary vaccinations and preventive treatments."
+es = "Por lo que vemos, Mika tiene una salud excelente: sin alergias conocidas, medicación habitual ni cuidados médicos especiales. Está esterilizada y tiene pasaporte veterinario con las vacunas y los tratamientos preventivos necesarios."
+val = "Pel que veiem, Mika té una salut excel·lent: sense al·lèrgies conegudes, medicació habitual ni cures mèdiques especials. Està esterilitzada i té passaport veterinari amb les vacunes i els tractaments preventius necessaris."
+ru = "По нашим наблюдениям, у Мики отличное здоровье: известных аллергий нет, постоянных лекарств и особого медицинского ухода не нужно. Она стерилизована, у неё есть ветеринарный паспорт с необходимыми прививками и профилактическими обработками."

@@ -41,7 +41,7 @@ IMAGES = ROOT / "assets" / "img"
 # Keys that are not part of the "main guide" word count.
 NOT_COUNTED = ("meta.", "ui.", "hero.alt", "walks.photo_alt", "water.photo_alt", "home.photo_alt")
 # Keys inside collapsed <details>: secondary text, reported apart from the visible guide.
-COLLAPSED = ("walks.more", "health.status", "health.note")
+COLLAPSED = ("walks.more", "health.status")
 # Target: roughly 250–400 visible words. Spanish and Valencian run ~8 % longer
 # than English for the same meaning, so flag only clear overruns.
 WORD_RANGE = (250, 440)
