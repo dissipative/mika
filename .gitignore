@@ -1,0 +1,16 @@
+# Build output (GitHub Actions builds it again on deploy)
+_site/
+
+# Original photos: large, and their EXIF data contains GPS location.
+# Only the optimised, metadata-free copies in assets/img/ are committed.
+/*.jpg
+/*.jpeg
+/*.JPG
+/*.JPEG
+/*.heic
+/*.HEIC
+/originals/
+
+# Local tooling
+__pycache__/
+.DS_Store

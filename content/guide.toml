@@ -1,0 +1,373 @@
+# Mika's care guide — all page text, in all four languages.
+#
+# Every entry has the same four keys: en, es (Spain), val (Valencian, AVL
+# norms) and ru. Keep the practical meaning identical in all four.
+#
+# Inline markup: **text** becomes bold. Nothing else is interpreted; any HTML
+# is escaped. Run `python3 build.py` after editing — it fails if a language is
+# missing or empty.
+#
+# PUBLIC PAGE: never add addresses, phone numbers, e-mails, key or door codes.
+
+# --------------------------------------------------------------------------
+# Site
+# --------------------------------------------------------------------------
+[site]
+# Public address of the published guide. Used only for link previews
+# (og:image / og:url). Change it if the repository or domain changes.
+url = "https://dissipative.github.io/mika/"
+
+# --------------------------------------------------------------------------
+# Languages (order = order in the switcher)
+# --------------------------------------------------------------------------
+[[languages]]
+code = "en"          # URL folder: /en/
+html = "en"          # <html lang>
+label = "English"
+og = "en_GB"
+match = ["en"]       # browser locales that pick this language on the root page
+
+[[languages]]
+code = "es"
+html = "es-ES"
+label = "Español"
+og = "es_ES"
+match = ["es"]
+
+[[languages]]
+code = "val"
+html = "ca-ES-valencia"
+label = "Valencià"
+og = "ca_ES"
+match = ["ca"]       # Catalan / Valencian browsers
+
+[[languages]]
+code = "ru"
+html = "ru"
+label = "Русский"
+og = "ru_RU"
+match = ["ru"]
+
+# --------------------------------------------------------------------------
+# Page meta and interface
+# --------------------------------------------------------------------------
+[meta.title]
+en = "Mika · Care guide"
+es = "Mika · Guía de cuidados"
+val = "Mika · Guia de cures"
+ru = "Мика · Памятка по уходу"
+
+[meta.description]
+en = "A short guide to looking after Mika: food, walks, water, home routine and health."
+es = "Una guía breve para cuidar de Mika: comida, paseos, agua, rutina en casa y salud."
+val = "Una guia breu per a cuidar Mika: menjar, passejos, aigua, rutina a casa i salut."
+ru = "Короткая памятка для тех, кто присматривает за Микой: еда, прогулки, вода, дом и здоровье."
+
+[ui.skip]
+en = "Skip to the guide"
+es = "Ir a la guía"
+val = "Ves a la guia"
+ru = "Перейти к памятке"
+
+[ui.languages]
+en = "Language"
+es = "Idioma"
+val = "Llengua"
+ru = "Язык"
+
+[ui.print]
+en = "Print or save as PDF"
+es = "Imprimir o guardar en PDF"
+val = "Imprimir o guardar en PDF"
+ru = "Распечатать или сохранить в PDF"
+
+[ui.updated]
+en = "Updated: November 2026"
+es = "Actualización: noviembre de 2026"
+val = "Actualització: novembre de 2026"
+ru = "Обновлено: ноябрь 2026"
+
+# --------------------------------------------------------------------------
+# Hero
+# --------------------------------------------------------------------------
+[hero.eyebrow]
+en = "Dog-sitting guide"
+es = "Guía para cuidarla"
+val = "Guia per a cuidar-la"
+ru = "Памятка для догситтера"
+
+[hero.title]
+en = "Meet Mika"
+es = "Esta es Mika"
+val = "Esta és Mika"
+ru = "Это Мика"
+
+[hero.lead]
+en = "Calm and friendly, she loves people, long walks and her own bed."
+es = "Tranquila y cariñosa; le encantan la gente, los paseos largos y su propia cama."
+val = "Tranquil·la i afectuosa; li encanten la gent, els passejos llargs i el seu llit."
+ru = "Спокойная и дружелюбная, обожает людей, долгие прогулки и свою лежанку."
+
+[hero.alt]
+en = "Mika, a white fluffy dog with a dark patch over one eye, looking up with her mouth open."
+es = "Mika, una perra blanca de pelo largo con una mancha oscura sobre un ojo, mira hacia arriba con la boca abierta."
+val = "Mika, una gossa blanca de pèl llarg amb una taca fosca sobre un ull, mira cap amunt amb la boca oberta."
+ru = "Мика — белая пушистая собака с тёмным пятном вокруг глаза — смотрит вверх с приоткрытой пастью."
+
+# --------------------------------------------------------------------------
+# Daily routine (above the fold)
+# --------------------------------------------------------------------------
+[routine.heading]
+en = "Daily routine"
+es = "Rutina diaria"
+val = "Rutina diària"
+ru = "Распорядок дня"
+
+[routine.morning]
+en = "Morning"
+es = "Mañana"
+val = "Matí"
+ru = "Утро"
+
+[routine.evening]
+en = "Evening"
+es = "Noche"
+val = "Nit"
+ru = "Вечер"
+
+[routine.morning_time]
+en = "~ 9:00–10:00"
+es = "~ 9:00–10:00"
+val = "~ 9:00–10:00"
+ru = "~ 9:00–10:00"
+
+[routine.evening_time]
+en = "~ 20:00–21:00"
+es = "~ 20:00–21:00"
+val = "~ 20:00–21:00"
+ru = "~ 20:00–21:00"
+
+[routine.walk]
+en = "Walk"
+es = "Paseo"
+val = "Passeig"
+ru = "Прогулка"
+
+[routine.walk_detail]
+en = "1 h or more"
+es = "1 h o más"
+val = "1 h o més"
+ru = "от 1 часа"
+
+[routine.meal]
+en = "Food"
+es = "Comida"
+val = "Menjar"
+ru = "Еда"
+
+[routine.meal_detail]
+en = "1 scoop"
+es = "1 cacito"
+val = "1 mesura"
+ru = "1 совок"
+
+[routine.then]
+en = "then"
+es = "después"
+val = "després"
+ru = "затем"
+
+[routine.note]
+en = "Meals usually come **after the walk**. The measuring scoop is kept with her food."
+es = "Normalmente come **después del paseo**. El cacito medidor está junto a su pienso."
+val = "Normalment menja **després del passeig**. El dosificador per a la mesura està amb el seu pinso."
+ru = "Обычно она ест **после прогулки**. Мерный совок лежит вместе с её кормом."
+
+# --------------------------------------------------------------------------
+# Cautions (above the fold, always visible)
+# --------------------------------------------------------------------------
+[cautions.heading]
+en = "Please remember"
+es = "Importante"
+val = "Important"
+ru = "Важно"
+
+[cautions.dogs]
+en = "**Give other dogs space** — don't force on-lead greetings."
+es = "**Deja espacio a otros perros**: no fuerces saludos con correa."
+val = "**Deixa espai als altres gossos**: no forces salutacions amb corretja."
+ru = "**Держите дистанцию с другими собаками** — не заставляйте её знакомиться на поводке."
+
+[cautions.lead]
+en = "**Keep her on lead**, unless the area is safe and permitted and her recall is reliable."
+es = "**Llévala con correa**, salvo que la zona sea segura y permitida y acuda siempre a tu llamada."
+val = "**Porta-la amb corretja**, tret que la zona siga segura i permesa i sempre torne quan la crides."
+ru = "**Держите её на поводке**, пока не убедитесь, что место безопасно и разрешено, а она надёжно возвращается на зов."
+
+[cautions.guard]
+en = "**Never take an item from her by force**, such as a slipper she is guarding."
+es = "**No le quites nada a la fuerza**, como una zapatilla que esté protegiendo."
+val = "**No li lleves res a la força**, com ara una sabatilla que estiga protegint."
+ru = "**Не отбирайте у неё вещи силой** — например, тапок, который она охраняет."
+
+[cautions.water]
+en = "**Offer water from your cupped hands**, not from a running tap."
+es = "**Ofrécele agua en el hueco de tus manos**, no de un grifo abierto."
+val = "**Ofereix-li aigua en les mans fent cassoleta**, no d'una aixeta oberta."
+ru = "**Поите её из ладоней, сложенных лодочкой**, а не из-под крана."
+
+# --------------------------------------------------------------------------
+# Walks & other dogs
+# --------------------------------------------------------------------------
+[walks.heading]
+en = "Walks & other dogs"
+es = "Paseos y otros perros"
+val = "Passejos i altres gossos"
+ru = "Прогулки и другие собаки"
+
+[walks.calm]
+en = "Generally calm outdoors. She loves attention from people, especially being petted."
+es = "Fuera suele estar tranquila. Le encanta que la gente le haga caso, sobre todo que la acaricien."
+val = "Fora de casa sol estar tranquil·la. Li encanta que la gent li faça cas, sobretot que l'acaronen."
+ru = "На улице обычно спокойна. Обожает внимание людей, особенно когда её гладят."
+
+[walks.dogs]
+en = "Usually fine with other dogs, but **on-lead introductions can be difficult**, especially with dogs her size or larger, or that look like border collies or Australian shepherds. If the other dog seems wary or uninterested, she may bark or growl."
+es = "Suele llevarse bien con otros perros, pero **las presentaciones con correa pueden ser difíciles**, sobre todo con perros de su tamaño o más grandes, o parecidos a un border collie o un pastor australiano. Si el otro perro parece desconfiado o indiferente, puede ladrar o gruñir."
+val = "Sol portar-se bé amb altres gossos, però **les presentacions amb corretja poden ser difícils**, sobretot amb gossos de la seua grandària o més grans, o que s'assemblen a un border collie o un pastor australià. Si l'altre gos pareix desconfiat o indiferent, pot lladrar o grunyir."
+ru = "С другими собаками обычно ладит, но **знакомство на поводке может быть непростым**, особенно с собаками её размера и крупнее или похожими на бордер-колли и австралийскую овчарку. Если другая собака насторожена или равнодушна, Мика может лаять или рычать."
+
+[walks.home]
+en = "She dislikes going home: once she recognises the way back, she may slow right down, stop or lie down. This is typical for her."
+es = "No le gusta volver a casa: cuando reconoce el camino, puede ir muy despacio, pararse o tumbarse. Es habitual en ella."
+val = "No li agrada tornar a casa: quan reconeix el camí, pot anar molt a poc a poc, parar-se o gitar-se. És habitual en ella."
+ru = "Домой возвращаться не любит: узнав дорогу обратно, может сильно замедлиться, остановиться или лечь. Для неё это обычно."
+
+[walks.more_summary]
+en = "More about her walks"
+es = "Más sobre sus paseos"
+val = "Més sobre els seus passejos"
+ru = "Подробнее о прогулках"
+
+[walks.more]
+en = "Walks sometimes last 2–3 hours. She enjoys investigating trees for mice, relaxing on the grass and chewing sticks. Her family sometimes lets her off lead in suitable open areas, where she stays close and plays well."
+es = "A veces los paseos duran 2–3 horas. Le gusta buscar ratones en los árboles, descansar en la hierba y mordisquear palos. Su familia a veces la suelta en zonas abiertas adecuadas, donde se queda cerca y juega bien."
+val = "De vegades els passejos duren 2–3 hores. Li agrada buscar ratolins als arbres, descansar en la gespa i rosegar pals. La seua família de vegades la deixa solta en zones obertes adequades, on es queda a prop i juga bé."
+ru = "Иногда прогулки длятся 2–3 часа. Любит искать мышей у деревьев, отдыхать на траве и грызть палки. Семья иногда спускает её с поводка в подходящих открытых местах — она держится рядом и хорошо играет."
+
+[walks.photo_alt]
+en = "Mika in a red harness, lying on the grass next to a larger grey and tan dog."
+es = "Mika, con un arnés rojo, tumbada en la hierba junto a un perro más grande, gris y canela."
+val = "Mika, amb un arnés roig, gitada en la gespa al costat d'un gos més gran, gris i canyella."
+ru = "Мика в красной шлейке лежит на траве рядом с более крупной серо-рыжей собакой."
+
+# --------------------------------------------------------------------------
+# Water on walks
+# --------------------------------------------------------------------------
+[water.heading]
+en = "Water on walks"
+es = "Agua en los paseos"
+val = "Aigua en els passejos"
+ru = "Вода на прогулке"
+
+[water.when]
+en = "On long walks, especially above about 15 °C, she may need a drink. Waiting at a public drinking fountain is her way of asking."
+es = "En paseos largos, sobre todo a partir de unos 15 °C, puede necesitar beber. Si espera junto a una fuente pública, está pidiendo agua."
+val = "En passejos llargs, sobretot a partir d'uns 15 °C, pot necessitar beure. Si espera al costat d'una font pública, està demanant aigua."
+ru = "На долгих прогулках, особенно когда теплее примерно 15 °C, ей может понадобиться вода. Если она ждёт у питьевого фонтанчика, значит, просит пить."
+
+[water.how]
+en = "**She can't drink comfortably from a running tap or stream.** Pour clean drinking water from a fountain or bottle into your cupped hands. Bring water on longer walks."
+es = "**No puede beber cómodamente de un grifo o un chorro.** Echa agua potable limpia de una fuente o una botella en el hueco de tus manos. En paseos largos, lleva agua."
+val = "**No pot beure còmodament d'una aixeta o d'un raig.** Posa aigua potable neta d'una font o d'una botella en les mans fent cassoleta. En passejos llargs, porta aigua."
+ru = "**Из-под крана или из струи ей пить неудобно.** Наберите чистую питьевую воду из фонтанчика или бутылки в сложенные лодочкой ладони. На долгие прогулки берите воду с собой."
+
+[water.photo_alt]
+en = "Mika on a red lead on a sandy beach, looking back over her shoulder."
+es = "Mika, con una correa roja, en una playa de arena, mirando hacia atrás."
+val = "Mika, amb una corretja roja, en una platja d'arena, mirant cap arrere."
+ru = "Мика на красном поводке на песчаном пляже оглядывается назад."
+
+# --------------------------------------------------------------------------
+# At home
+# --------------------------------------------------------------------------
+[home.heading]
+en = "At home"
+es = "En casa"
+val = "A casa"
+ru = "Дома"
+
+[home.bed]
+en = "She loves her **own dog bed** and sleeps there. She hasn't normally climbed onto sofas or beds for over a year."
+es = "Le encanta **su propia cama** y duerme allí. Desde hace más de un año, normalmente no se sube a sofás ni camas."
+val = "Li encanta **el seu llit** i hi dorm. Des de fa més d'un any, normalment no puja a sofàs ni llits."
+ru = "Обожает **свою лежанку** и спит на ней. На диваны и кровати обычно не забирается уже больше года."
+
+[home.people]
+en = "Calm and friendly with people, including unfamiliar visitors. She is used to living with a cat, but not every new cat introduction is automatically safe."
+es = "Tranquila y amable con la gente, también con visitas desconocidas. Está acostumbrada a vivir con un gato, pero no toda presentación a un gato nuevo es segura."
+val = "Tranquil·la i amable amb la gent, també amb visites desconegudes. Està acostumada a viure amb un gat, però no tota presentació a un gat nou és segura."
+ru = "Спокойна и дружелюбна с людьми, в том числе с незнакомыми гостями. Привыкла жить с кошкой, но не всякое знакомство с новой кошкой безопасно."
+
+[home.alone]
+en = "She is comfortable alone in her **familiar** home. In an unfamiliar flat, especially on the first day, she might be anxious."
+es = "Está tranquila sola en **su** casa. En un piso desconocido, sobre todo el primer día, es posible que esté nerviosa."
+val = "Està tranquil·la a soles en **la seua** casa. En un pis desconegut, sobretot el primer dia, és possible que estiga nerviosa."
+ru = "Спокойно остаётся одна в **привычном** доме. В незнакомой квартире, особенно в первый день, может тревожиться."
+
+[home.noise]
+en = "Fireworks, dogs barking outside or loud music may make her bark. She generally settles once the noise ends."
+es = "Los fuegos artificiales, los ladridos de otros perros en la calle o la música alta pueden hacerla ladrar. Suele calmarse cuando acaba el ruido."
+val = "Els focs artificials, els lladrucs d'altres gossos al carrer o la música alta poden fer-la lladrar. Sol calmar-se quan s'acaba el soroll."
+ru = "Фейерверки, лай собак на улице или громкая музыка могут заставить её лаять. Обычно она успокаивается, когда шум стихает."
+
+[home.slipper_title]
+en = "If she guards a slipper"
+es = "Si protege una zapatilla"
+val = "Si protegix una sabatilla"
+ru = "Если она охраняет тапок"
+
+[home.slipper]
+en = "She sometimes takes a slipper to her bed and guards it, usually without damaging it. **Don't take it by force.** What has worked for her family: bring her food bowl to her bed, so she leaves the slipper by herself."
+es = "A veces se lleva una zapatilla a su cama y la protege, normalmente sin romperla. **No se la quites a la fuerza.** Lo que le ha funcionado a su familia: acercarle su cuenco de comida a la cama para que deje la zapatilla por sí misma."
+val = "De vegades s'emporta una sabatilla al llit i la protegix, normalment sense trencar-la. **No li la lleves a la força.** El que ha funcionat a la seua família: acostar-li el bol del menjar al llit perquè deixe la sabatilla per si mateixa."
+ru = "Иногда она уносит тапок на лежанку и охраняет его, но обычно не портит. **Не отбирайте его силой.** Её семье помогал такой приём: поднести миску с едой к лежанке, чтобы она сама оставила тапок."
+
+[home.photo_alt]
+en = "Mika lying in a hallway at home, with a cat sitting nearby."
+es = "Mika, tumbada en el pasillo de casa, con un gato sentado cerca."
+val = "Mika, gitada en el corredor de casa, amb un gat assegut a prop."
+ru = "Мика лежит в коридоре дома, рядом сидит кошка."
+
+# --------------------------------------------------------------------------
+# Food quirks & health
+# --------------------------------------------------------------------------
+[health.heading]
+en = "Food & health"
+es = "Comida y salud"
+val = "Menjar i salut"
+ru = "Еда и здоровье"
+
+[health.food]
+en = "She may be slow to approach her food, or carry mouthfuls to her bed and eat there. This is normal for her: she generally eats eventually, so there is no need to pressure her."
+es = "Puede tardar mucho en acercarse a la comida o llevarse bocados a la cama y comer allí. Es normal en ella: suele acabar comiendo, así que no hace falta presionarla."
+val = "Pot tardar molt a acostar-se al menjar o emportar-se'n mossegades al llit i menjar allí. És normal en ella: sol acabar menjant, així que no cal pressionar-la."
+ru = "Может долго не подходить к еде или уносить корм на лежанку и есть там. Для неё это нормально: обычно она в итоге ест, торопить её не нужно."
+
+[health.status_summary]
+en = "Health status"
+es = "Estado de salud"
+val = "Estat de salut"
+ru = "Состояние здоровья"
+
+[health.status]
+en = "According to her family, she is healthy: no known allergies, regular medication or special medical care. She is spayed and has a veterinary passport with the necessary vaccinations and preventive treatments."
+es = "Según su familia, está sana: sin alergias conocidas, medicación habitual ni cuidados médicos especiales. Está esterilizada y tiene pasaporte veterinario con las vacunas y los tratamientos preventivos necesarios."
+val = "Segons la seua família, està sana: sense al·lèrgies conegudes, medicació habitual ni cures mèdiques especials. Està esterilitzada i té passaport veterinari amb les vacunes i els tractaments preventius necessaris."
+ru = "По словам семьи, Мика здорова: известных аллергий, постоянных лекарств и особого медицинского ухода нет. Она стерилизована, у неё есть ветеринарный паспорт с необходимыми прививками и профилактическими обработками."
+
+[health.note]
+en = "This guide does not replace veterinary advice."
+es = "Esta guía no sustituye el consejo de un veterinario."
+val = "Esta guia no substituïx el consell d'un veterinari."
+ru = "Эта памятка не заменяет консультацию ветеринара."

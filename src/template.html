@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="{{@html_lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbf7f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1916" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{meta.title}}">
+<meta property="og:description" content="{{meta.description}}">
+<meta property="og:locale" content="{{@og_locale}}">
+<meta property="og:image" content="{{@og_image}}">
+<meta property="og:url" content="{{@og_url}}">
+{{@alternates}}
+<link rel="icon" href="{{@base}}assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" type="image/avif" imagesrcset="{{@base}}assets/img/hero-480.avif 480w, {{@base}}assets/img/hero-800.avif 800w, {{@base}}assets/img/hero-1200.avif 1200w" imagesizes="(min-width: 860px) 340px, 100vw">
+<link rel="stylesheet" href="{{@base}}assets/styles.css">
+{{@head_script}}
+</head>
+<body>
+<a class="skip" href="#main">{{ui.skip}}</a>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 12.5h18a9 7 0 0 1-18 0Z"/><path d="M8 19.2 7 21h10l-1-1.8"/><circle cx="9" cy="9.3" r="1.3"/><circle cx="12.6" cy="8.2" r="1.3"/><circle cx="15.4" cy="10" r="1.3"/></symbol>
+  <symbol id="i-lead" viewBox="0 0 24 24"><path d="M6.5 3.5a3 3 0 1 0 0 6c5 0 3.5 9.5 10.5 9.5"/><rect x="16.5" y="16.5" width="5" height="5" rx="1.5"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M2.5 15.5c0-3.4 2-5 4.5-5h10c2.5 0 4.5 1.6 4.5 5v2.5h-19z"/><path d="M6.5 14.5c1.2-1.6 3-2.4 5.5-2.4s4.3.8 5.5 2.4"/><path d="M4 18v2M20 18v2"/></symbol>
+  <symbol id="i-hands" viewBox="0 0 24 24"><path d="M12 2.8s3 3.4 3 5.4a3 3 0 0 1-6 0c0-2 3-5.4 3-5.4Z"/><path d="M2.5 12.5h19c0 4.4-4.2 7.5-9.5 7.5s-9.5-3.1-9.5-7.5Z"/><path d="M12 12.5v7.4"/></symbol>
+  <symbol id="i-house" viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20Z"/></symbol>
+  <symbol id="i-paw" viewBox="0 0 24 24"><ellipse cx="12" cy="16" rx="4.2" ry="3.6"/><circle cx="6" cy="10.5" r="1.9"/><circle cx="9.6" cy="6.6" r="1.9"/><circle cx="14.4" cy="6.6" r="1.9"/><circle cx="18" cy="10.5" r="1.9"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5"/><circle cx="12" cy="16.3" r=".4"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></symbol>
+</svg>
+
+<header class="topbar">
+  <span class="brand" aria-hidden="true"><img src="{{@base}}assets/favicon.svg" alt="" width="28" height="28">Mika</span>
+  <nav class="langs" aria-label="{{ui.languages}}">
+{{@switcher}}
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+  <section class="hero" aria-labelledby="title">
+    <div class="hero__photo">
+      <picture>
+        <source type="image/avif" srcset="{{@base}}assets/img/hero-480.avif 480w, {{@base}}assets/img/hero-800.avif 800w, {{@base}}assets/img/hero-1200.avif 1200w" sizes="(min-width: 860px) 340px, 100vw">
+        <img src="{{@base}}assets/img/hero-800.webp" srcset="{{@base}}assets/img/hero-480.webp 480w, {{@base}}assets/img/hero-800.webp 800w, {{@base}}assets/img/hero-1200.webp 1200w" sizes="(min-width: 860px) 340px, 100vw" width="800" height="889" alt="{{hero.alt}}" fetchpriority="high">
+      </picture>
+    </div>
+    <div class="hero__text">
+      <p class="eyebrow">{{hero.eyebrow}}</p>
+      <h1 id="title">{{hero.title}}</h1>
+      <svg class="swoosh" viewBox="0 0 220 18" aria-hidden="true" focusable="false"><path d="M3 12c38-9 76-9 112-3s70 6 102-5"/></svg>
+      <p class="lead">{{hero.lead}}</p>
+    </div>
+  </section>
+
+  <div class="essentials">
+    <section class="card routine" aria-labelledby="routine-h">
+      <h2 id="routine-h">{{routine.heading}}</h2>
+      <ol class="day">
+        <li>
+          <p class="day__when"><span>{{routine.morning}}</span> <strong>{{routine.morning_time}}</strong></p>
+          <p class="day__steps">
+            <span class="step"><svg class="icon" aria-hidden="true"><use href="#i-lead"/></svg><span><strong>{{routine.walk}}</strong> {{routine.walk_detail}}</span></span>
+            <svg class="then" aria-hidden="true"><use href="#i-arrow"/></svg><span class="visually-hidden">{{routine.then}}</span>
+            <span class="step"><svg class="icon" aria-hidden="true"><use href="#i-bowl"/></svg><span><strong>{{routine.meal}}</strong> {{routine.meal_detail}}</span></span>
+          </p>
+        </li>
+        <li>
+          <p class="day__when"><span>{{routine.evening}}</span> <strong>{{routine.evening_time}}</strong></p>
+          <p class="day__steps">
+            <span class="step"><svg class="icon" aria-hidden="true"><use href="#i-lead"/></svg><span><strong>{{routine.walk}}</strong> {{routine.walk_detail}}</span></span>
+            <svg class="then" aria-hidden="true"><use href="#i-arrow"/></svg><span class="visually-hidden">{{routine.then}}</span>
+            <span class="step"><svg class="icon" aria-hidden="true"><use href="#i-bowl"/></svg><span><strong>{{routine.meal}}</strong> {{routine.meal_detail}}</span></span>
+          </p>
+        </li>
+      </ol>
+      <p class="note">{{routine.note}}</p>
+    </section>
+
+    <section class="card cautions" aria-labelledby="cautions-h">
+      <h2 id="cautions-h"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>{{cautions.heading}}</h2>
+      <ul>
+        <li><a href="#walks">{{cautions.dogs}}</a></li>
+        <li><a href="#walks">{{cautions.lead}}</a></li>
+        <li><a href="#slipper">{{cautions.guard}}</a></li>
+        <li><a href="#water">{{cautions.water}}</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="sections">
+    <section class="card topic" id="walks" aria-labelledby="walks-h">
+      <h2 id="walks-h"><svg class="icon" aria-hidden="true"><use href="#i-paw"/></svg>{{walks.heading}}</h2>
+      <figure class="photo photo--wide">
+        <picture>
+          <source type="image/avif" srcset="{{@base}}assets/img/grass-480.avif 480w, {{@base}}assets/img/grass-800.avif 800w, {{@base}}assets/img/grass-1200.avif 1200w" sizes="(min-width: 860px) 480px, 100vw">
+          <img src="{{@base}}assets/img/grass-800.webp" srcset="{{@base}}assets/img/grass-480.webp 480w, {{@base}}assets/img/grass-800.webp 800w, {{@base}}assets/img/grass-1200.webp 1200w" sizes="(min-width: 860px) 480px, 100vw" width="800" height="533" alt="{{walks.photo_alt}}" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <ul class="points">
+        <li>{{walks.calm}}</li>
+        <li class="flag">{{walks.dogs}}</li>
+        <li>{{walks.home}}</li>
+      </ul>
+      <details>
+        <summary>{{walks.more_summary}}</summary>
+        <p>{{walks.more}}</p>
+      </details>
+    </section>
+
+    <section class="card topic" id="water" aria-labelledby="water-h">
+      <h2 id="water-h"><svg class="icon" aria-hidden="true"><use href="#i-hands"/></svg>{{water.heading}}</h2>
+      <figure class="photo photo--wide">
+        <picture>
+          <source type="image/avif" srcset="{{@base}}assets/img/beach-480.avif 480w, {{@base}}assets/img/beach-800.avif 800w, {{@base}}assets/img/beach-1200.avif 1200w" sizes="(min-width: 860px) 480px, 100vw">
+          <img src="{{@base}}assets/img/beach-800.webp" srcset="{{@base}}assets/img/beach-480.webp 480w, {{@base}}assets/img/beach-800.webp 800w, {{@base}}assets/img/beach-1200.webp 1200w" sizes="(min-width: 860px) 480px, 100vw" width="800" height="533" alt="{{water.photo_alt}}" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <ul class="points">
+        <li>{{water.when}}</li>
+        <li class="flag">{{water.how}}</li>
+      </ul>
+    </section>
+
+    <section class="card topic" id="home" aria-labelledby="home-h">
+      <h2 id="home-h"><svg class="icon" aria-hidden="true"><use href="#i-house"/></svg>{{home.heading}}</h2>
+      <div class="split">
+        <figure class="photo photo--tall">
+          <picture>
+            <source type="image/avif" srcset="{{@base}}assets/img/home-480.avif 480w, {{@base}}assets/img/home-800.avif 800w" sizes="(min-width: 860px) 200px, 40vw">
+            <img src="{{@base}}assets/img/home-480.webp" srcset="{{@base}}assets/img/home-480.webp 480w, {{@base}}assets/img/home-800.webp 800w" sizes="(min-width: 860px) 200px, 40vw" width="480" height="600" alt="{{home.photo_alt}}" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+        <ul class="points">
+          <li>{{home.bed}}</li>
+          <li>{{home.people}}</li>
+          <li>{{home.alone}}</li>
+          <li>{{home.noise}}</li>
+        </ul>
+      </div>
+      <div class="callout" id="slipper">
+        <h3>{{home.slipper_title}}</h3>
+        <p>{{home.slipper}}</p>
+      </div>
+    </section>
+
+    <section class="card topic" id="health" aria-labelledby="health-h">
+      <h2 id="health-h"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>{{health.heading}}</h2>
+      <ul class="points">
+        <li>{{health.food}}</li>
+      </ul>
+      <details>
+        <summary>{{health.status_summary}}</summary>
+        <p>{{health.status}}</p>
+        <p class="fineprint">{{health.note}}</p>
+      </details>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>{{ui.updated}}</p>
+  <p class="print-url" data-print-url></p>
+  <button type="button" class="print-btn" data-print hidden>{{ui.print}}</button>
+</footer>
+
+<script src="{{@base}}assets/site.js" defer></script>
+</body>
+</html>
