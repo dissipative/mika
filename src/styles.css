@@ -127,29 +127,29 @@ main { max-width: var(--page); margin: 0 auto; padding: 0 1rem 2rem; }
 .card h2 .icon { color: var(--accent); }
 
 /* ---------- Hero ---------- */
-.hero { display: grid; gap: 0; margin: .75rem 0 var(--gap); }
+/* Phone and tablet: photo and title share one card, same width as every other card. */
+.hero {
+  display: grid; gap: 0; margin: .5rem 0 var(--gap);
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden;
+}
 .hero__photo {
-  border-radius: var(--radius); overflow: hidden;
+  overflow: hidden;
   aspect-ratio: 2 / 1; background: var(--accent-soft);
 }
 .hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
-.hero__text {
-  position: relative; margin: -1.75rem .75rem 0;
-  background: var(--card); border: 1px solid var(--line);
-  border-radius: var(--radius); box-shadow: var(--shadow);
-  padding: .85rem 1.05rem 1rem;
-}
+.hero__text { padding: .8rem var(--pad) .95rem; }
 .eyebrow {
   font-size: .78rem; font-weight: 650; letter-spacing: .12em; text-transform: uppercase;
   color: var(--accent);
 }
 h1 {
   font: 600 clamp(2.2rem, 10vw, 4.4rem)/1 var(--serif);
-  letter-spacing: -.02em; margin-top: .3rem;
+  letter-spacing: -.02em; margin-top: .2rem;
   text-wrap: balance;
 }
 .swoosh {
-  display: block; width: 8rem; height: auto; margin: .2rem 0 .45rem;
+  display: block; width: 8rem; height: auto; margin: .15rem 0 .35rem;
   fill: none; stroke: var(--red); stroke-width: 3.2; stroke-linecap: round;
 }
 .lead { color: var(--muted); font-size: 1rem; line-height: 1.5; max-width: 30rem; }
@@ -253,7 +253,7 @@ details p { margin: .1rem 0 .2rem; }
   main, .footer { padding-inline: 1.5rem; }
   .essentials { grid-template-columns: 1fr 1fr; align-items: start; }
   .hero__photo { aspect-ratio: 5 / 2; }
-  .hero__text { margin: -3rem 1.5rem 0; padding: 1.4rem 1.6rem 1.5rem; }
+  .hero__text { padding: 1.25rem var(--pad) 1.4rem; }
 }
 
 /* Two flowing columns: Walks + Water | Home + Food & health. No ragged grid rows. */
@@ -277,10 +277,9 @@ details p { margin: .1rem 0 .2rem; }
     grid-template-columns: minmax(0, 1fr) 360px;
     align-items: center; gap: 3.5rem; margin: 2.5rem 0 2.25rem;
   }
-  .hero__text {
-    order: -1; margin: 0; background: none; border: 0; box-shadow: none; padding: 0 0 0 .25rem;
-  }
-  .hero__photo { aspect-ratio: 1; transform: rotate(1.5deg); box-shadow: var(--shadow); border: 6px solid var(--card); }
+  .hero { background: none; border: 0; border-radius: 0; box-shadow: none; overflow: visible; }
+  .hero__text { order: -1; padding: 0 0 0 .25rem; }
+  .hero__photo { aspect-ratio: 1; border-radius: var(--radius); transform: rotate(1.5deg); box-shadow: var(--shadow); border: 6px solid var(--card); }
   .hero__photo img { object-position: 50% 40%; }
   .lead { font-size: 1.2rem; }
   .swoosh { width: 12rem; margin: .35rem 0 .9rem; }
@@ -301,7 +300,8 @@ details p { margin: .1rem 0 .2rem; }
   body { font-size: 10pt; line-height: 1.38; background: #fff; }
   .topbar, .skip, .print-btn, .swoosh, .sections .photo { display: none !important; }
   main, .footer { max-width: none; padding: 0; }
-  .hero { display: grid; grid-template-columns: 34mm 1fr; gap: 6mm; align-items: center; margin: 0 0 5mm; }
+  .hero { display: grid; grid-template-columns: 34mm 1fr; gap: 6mm; align-items: center; margin: 0 0 5mm;
+          background: none; border: 0; border-radius: 0; box-shadow: none; overflow: visible; }
   .hero__photo { aspect-ratio: 1; border-radius: 6mm; transform: none; border: 0; box-shadow: none; }
   .hero__text { order: 0; margin: 0; padding: 0; border: 0; box-shadow: none; background: none; }
   h1 { font-size: 26pt; }
