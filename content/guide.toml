@@ -334,10 +334,10 @@ val = "De vegades s'emporta una sabatilla al llit i la protegix, normalment sens
 ru = "Иногда она уносит тапок на лежанку и охраняет его, но обычно не портит. **Не отбирайте его силой.** Нам помогает такой приём: поднести миску с едой к лежанке, чтобы она сама оставила тапок."
 
 [home.photo_alt]
-en = "Mika lying in a hallway at home, with a cat sitting nearby."
-es = "Mika, tumbada en el pasillo de casa, con un gato sentado cerca."
-val = "Mika, gitada en el corredor de casa, amb un gat assegut a prop."
-ru = "Мика лежит в коридоре дома, рядом сидит кошка."
+en = "Mika lying in the hallway at home."
+es = "Mika, tumbada en el pasillo de casa."
+val = "Mika, gitada en el corredor de casa."
+ru = "Мика лежит в коридоре дома."
 
 # --------------------------------------------------------------------------
 # Food quirks & health

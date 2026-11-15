@@ -14,11 +14,15 @@ OUT="$ROOT/assets/img"
 mkdir -p "$OUT"
 
 # name | source file | crop (WxH+X+Y on the auto-oriented original) | widths
+# "hero" is the square-ish desktop portrait, "herowide" the 2:1 phone/tablet banner.
+# "home" (with the cat) floats beside the text on wide screens, "homewide" sits on top on phones.
 PHOTOS=(
   "hero|IMG_4243.jpeg|2722x3024+520+0|480 800 1200"
-  "beach|IMG_4945.jpeg|3024x2016+0+1500|480 800 1200"
-  "grass|IMG_4854.jpeg|4032x2688+0+168|480 800 1200"
+  "herowide|IMG_4243.jpeg|4032x2016+0+0|480 800 1200"
+  "beach|IMG_4945.jpeg|2268x1512+756+1950|480 800 1200"
+  "grass|IMG_4854.jpeg|3600x2400+300+360|480 800 1200"
   "home|dclassic 2026-03-08 122005AB1035BD67CA.jpg|2688x3360+0+300|480 800"
+  "homewide|dclassic 2026-03-08 122005AB1035BD67CA.jpg|2688x1792+0+320|480 800 1200"
 )
 
 for entry in "${PHOTOS[@]}"; do

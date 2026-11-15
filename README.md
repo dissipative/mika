@@ -68,6 +68,7 @@ The build writes `_site/` and stops with an error if one of these checks fails:
 5. The HTML tags are balanced, IDs are unique and each image has `alt` text.
 6. Each local link, image and `srcset` entry resolves to a file inside `_site/`.
 7. No URL starts with `/`. Root-absolute URLs break under a repository subpath.
+8. The braces in `src/styles.css` are balanced. One stray `{` nests all later rules, and the print styles stop working.
 
 The build also prints the visible word count for each language. The target is roughly
 250–400 words. Spanish and Valencian are about 8 % longer than English for the same meaning.
@@ -107,14 +108,16 @@ The build prints a warning for an entry that the template does not use.
 The script removes all metadata, including GPS location. Git ignores the original photos
 (`*.jpg`, `*.jpeg`, `*.heic` in the root). Do not commit originals: their EXIF data contains the location.
 
-The page uses these four originals:
+The page uses four originals, in six crops:
 
 | Output | Original | Use |
 |---|---|---|
-| `hero-*` | `IMG_4243.jpeg` | Main portrait |
+| `hero-*` | `IMG_4243.jpeg` | Main portrait on wide screens and in print |
+| `herowide-*` | `IMG_4243.jpeg` | 2:1 banner on phones and tablets (below 860 px) |
 | `grass-*` | `IMG_4854.jpeg` | Walks and other dogs |
 | `beach-*` | `IMG_4945.jpeg` | Water on walks |
-| `home-*` | `dclassic 2026-03-08 122005AB1035BD67CA.jpg` | At home |
+| `home-*` | `dclassic 2026-03-08 122005AB1035BD67CA.jpg` | At home, tall photo beside the text (960 px and wider) |
+| `homewide-*` | `dclassic 2026-03-08 122005AB1035BD67CA.jpg` | At home, wide photo on top (below 960 px) |
 
 `IMG_8947.jpeg` is not used. It shows Mika on a human bed, and the guide says that she has not
 normally done that for over a year.

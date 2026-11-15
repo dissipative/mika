@@ -296,7 +296,27 @@ def check_page(path: Path, site: Path) -> list[str]:
 # --------------------------------------------------------------------------
 # Main
 # --------------------------------------------------------------------------
+def check_css(path: Path) -> list[str]:
+    """Catch unbalanced braces: one stray '{' silently nests every later rule (print styles included)."""
+    css = re.sub(r"/\*.*?\*/", "", path.read_text(encoding="utf-8"), flags=re.S)
+    css = re.sub(r'"(?:\\.|[^"\\])*"', '""', css)
+    depth, errors = 0, []
+    for number, line in enumerate(css.splitlines(), 1):
+        if line.startswith("@") and depth:
+            errors.append(f"{path.name} line {number}: top-level at-rule opened inside another block")
+        depth += line.count("{") - line.count("}")
+        if depth < 0:
+            errors.append(f"{path.name} line {number}: unexpected '}}'")
+            depth = 0
+    if depth:
+        errors.append(f"{path.name}: {depth} unclosed '{{'")
+    return errors
+
+
 def build() -> None:
+    css_errors = check_css(ROOT / "src" / "styles.css")
+    if css_errors:
+        raise BuildError("stylesheet errors:\n  " + "\n  ".join(css_errors))
     site, languages, strings = load_content()
     template = TEMPLATE.read_text(encoding="utf-8")
 
