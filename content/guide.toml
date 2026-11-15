@@ -298,16 +298,16 @@ val = "A casa"
 ru = "Дома"
 
 [home.bed]
-en = "She loves her **own dog bed** and sleeps there. She hasn't normally climbed onto sofas or beds for over a year."
-es = "Le encanta **su propia cama** y duerme allí. Desde hace más de un año, normalmente no se sube a sofás ni camas."
-val = "Li encanta **el seu llit** i hi dorm. Des de fa més d'un any, normalment no puja a sofàs ni llits."
-ru = "Обожает **свою лежанку** и спит на ней. На диваны и кровати обычно не забирается уже больше года."
+en = "Over the last year she has rarely climbed onto sofas or beds: she prefers **her own dog bed**, and she sleeps there."
+es = "En el último año casi nunca se sube a sofás o camas: prefiere **su propia cama**, y duerme allí."
+val = "L'últim any rarament puja a sofàs o llits: prefereix **el seu llit**, i hi dorm."
+ru = "Последний год она редко забирается на диваны и кровати, ей больше нравится **своя лежанка** — там она и спит."
 
 [home.people]
-en = "Calm and friendly with people, including unfamiliar visitors. She is used to living with a cat, but not every new cat introduction is automatically safe."
-es = "Tranquila y amable con la gente, también con visitas desconocidas. Está acostumbrada a vivir con un gato, pero no toda presentación a un gato nuevo es segura."
-val = "Tranquil·la i amable amb la gent, també amb visites desconegudes. Està acostumada a viure amb un gat, però no tota presentació a un gat nou és segura."
-ru = "Спокойна и дружелюбна с людьми, в том числе с незнакомыми гостями. Привыкла жить с кошкой, но не всякое знакомство с новой кошкой безопасно."
+en = "Calm and friendly with people, including unfamiliar visitors. She is used to living with a Devon Rex cat, but with unfamiliar cats she usually wants to play: they don't understand her and usually see her as a threat."
+es = "Tranquila y amable con la gente, también con visitas desconocidas. Está acostumbrada a vivir con un gato devon rex, pero con gatos desconocidos casi siempre quiere jugar: no la entienden y suelen verla como una amenaza."
+val = "Tranquil·la i amable amb la gent, també amb visites desconegudes. Està acostumada a viure amb un gat devon rex, però amb gats desconeguts quasi sempre vol jugar: no l'entenen i solen veure-la com una amenaça."
+ru = "Спокойна и дружелюбна с людьми, в том числе с незнакомыми гостями. Привыкла жить с котом породы девон-рекс, но с незнакомыми котами чаще всего хочет играть, а они её не понимают и обычно воспринимают как угрозу."
 
 [home.alone]
 en = "She is comfortable alone in her **familiar** home. In an unfamiliar flat, especially on the first day, she might be anxious."
