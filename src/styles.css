@@ -1,17 +1,18 @@
 /* Mika's care guide — one stylesheet: screen (mobile first) + print. */
 
 :root {
-  --paper: #fbf7f0;
+  /* "Mika's coat": black and white like her fur, one red like her harness. */
+  --paper: #f7f7f5;
   --card: #ffffff;
-  --ink: #23201c;
-  --muted: #5c544a;
-  --line: #e9e0d3;
-  --honey: #9a5a17;          /* warm wood tone from her photos (text-safe) */
-  --honey-soft: #f6ead8;
-  --red: #b3302a;            /* her red harness — used only for cautions */
-  --red-soft: #fcebe7;
+  --ink: #141414;
+  --muted: #52514e;
+  --line: #e3e2de;
+  --accent: #2f2f2e;         /* charcoal, like her eye patch */
+  --accent-soft: #ededeb;
+  --red: #c62a26;            /* her red harness — used only for cautions */
+  --red-soft: #fdeceb;
   --focus: #1d5fd1;
-  --shadow: 0 1px 2px rgb(60 40 20 / .06), 0 8px 24px -12px rgb(60 40 20 / .18);
+  --shadow: 0 1px 2px rgb(0 0 0 / .05), 0 8px 24px -12px rgb(0 0 0 / .16);
   --radius: 20px;
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -20,15 +21,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #1b1916;
-    --card: #25221e;
-    --ink: #f3ede4;
-    --muted: #c4b9ab;
-    --line: #3a352f;
-    --honey: #e5a65c;
-    --honey-soft: #33291d;
-    --red: #ff8d7e;
-    --red-soft: #3a211d;
+    --paper: #121212;
+    --card: #1c1c1b;
+    --ink: #f2f2f0;
+    --muted: #bdbcb8;
+    --line: #343432;
+    --accent: #e4e3df;
+    --accent-soft: #2a2a28;
+    --red: #ff7a70;
+    --red-soft: #3a1c1a;
     --focus: #8fb5ff;
     --shadow: 0 1px 2px rgb(0 0 0 / .3);
   }
@@ -99,7 +100,7 @@ main:focus { outline: none; }
   font-size: .9rem; font-weight: 550; line-height: 1.2; text-decoration: none; color: var(--muted);
   min-height: 2.25rem; display: flex; align-items: center;
 }
-.langs a:hover { color: var(--ink); background: var(--honey-soft); }
+.langs a:hover { color: var(--ink); background: var(--accent-soft); }
 .langs a[aria-current="page"] { background: var(--ink); color: var(--paper); }
 .topbar { justify-content: center; }
 
@@ -118,13 +119,13 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 1rem 2.5rem; }
   font: 600 1.4rem/1.2 var(--serif); letter-spacing: -.005em;
   margin-bottom: .7rem;
 }
-.card h2 .icon { color: var(--honey); }
+.card h2 .icon { color: var(--accent); }
 
 /* ---------- Hero ---------- */
 .hero { display: grid; gap: 0; margin: .75rem 0 1rem; }
 .hero__photo {
   border-radius: var(--radius); overflow: hidden;
-  aspect-ratio: 16 / 9; background: var(--honey-soft);
+  aspect-ratio: 16 / 9; background: var(--accent-soft);
 }
 .hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
 .hero__text {
@@ -135,7 +136,7 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 1rem 2.5rem; }
 }
 .eyebrow {
   font-size: .78rem; font-weight: 650; letter-spacing: .12em; text-transform: uppercase;
-  color: var(--honey);
+  color: var(--accent);
 }
 h1 {
   font: 600 clamp(2.2rem, 10vw, 4.4rem)/1 var(--serif);
@@ -153,15 +154,15 @@ h1 {
 
 .day { list-style: none; padding: 0; display: grid; gap: .5rem; }
 .day > li {
-  border-radius: 14px; background: var(--honey-soft);
+  border-radius: 14px; background: var(--accent-soft);
   padding: .55rem .75rem .6rem;
 }
 .day__when { display: flex; justify-content: space-between; gap: .5rem; align-items: baseline; }
 .day__when span { font-weight: 650; }
-.day__when strong { font-variant-numeric: tabular-nums; color: var(--honey); font-weight: 700; white-space: nowrap; }
+.day__when strong { font-variant-numeric: tabular-nums; color: var(--accent); font-weight: 700; white-space: nowrap; }
 .day__steps { display: flex; align-items: center; gap: .4rem; flex-wrap: wrap; margin-top: .3rem; }
 .step { display: inline-flex; align-items: center; gap: .4rem; }
-.step .icon { color: var(--honey); width: 1.6em; height: 1.6em; }
+.step .icon { color: var(--accent); width: 1.6em; height: 1.6em; }
 .step strong { display: block; line-height: 1.2; }
 .step > span { font-size: .95rem; line-height: 1.25; }
 .then { width: 1.1em; height: 1.1em; fill: none; stroke: var(--muted); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; margin: 0 .2rem; }
@@ -184,7 +185,7 @@ h1 {
 /* ---------- Topic sections ---------- */
 .sections { display: grid; gap: 1rem; }
 
-.photo { border-radius: 14px; overflow: hidden; background: var(--honey-soft); margin-bottom: 1rem; }
+.photo { border-radius: 14px; overflow: hidden; background: var(--accent-soft); margin-bottom: 1rem; }
 .photo img { width: 100%; height: 100%; object-fit: cover; }
 .photo--wide { aspect-ratio: 3 / 2; }
 .photo--tall { aspect-ratio: 4 / 5; }
@@ -193,7 +194,7 @@ h1 {
 .points li { position: relative; padding-left: 1.15rem; }
 .points li::before {
   content: ""; position: absolute; left: 0; top: .62em;
-  width: .45rem; height: .45rem; border-radius: 50%; background: var(--honey);
+  width: .45rem; height: .45rem; border-radius: 50%; background: var(--accent);
 }
 .points li.flag::before { background: var(--red); width: .5rem; height: .5rem; border-radius: 2px; transform: rotate(45deg); }
 
@@ -212,7 +213,7 @@ h1 {
 
 details { margin-top: 1rem; border-top: 1px solid var(--line); padding-top: .8rem; }
 summary {
-  cursor: pointer; font-weight: 600; color: var(--honey);
+  cursor: pointer; font-weight: 600; color: var(--accent);
   list-style: none; display: flex; align-items: center; gap: .5rem; min-height: 2rem;
 }
 summary::-webkit-details-marker { display: none; }
@@ -236,7 +237,7 @@ details p { margin-top: .4rem; }
   background: var(--card); border: 1px solid var(--line); border-radius: 999px;
   padding: .55rem 1rem; min-height: 2.75rem; cursor: pointer;
 }
-.print-btn:hover { background: var(--honey-soft); }
+.print-btn:hover { background: var(--accent-soft); }
 
 /* ---------- Wider screens ---------- */
 @media (max-width: 399px) {
@@ -294,7 +295,7 @@ details p { margin-top: .4rem; }
   @page { margin: 12mm; }
   :root {
     --paper: #fff; --card: #fff; --ink: #000; --muted: #333; --line: #bbb;
-    --honey: #6b3d0c; --honey-soft: #fff; --red: #9c1f17; --red-soft: #fff;
+    --accent: #222; --accent-soft: #fff; --red: #b0201c; --red-soft: #fff;
   }
   body { font-size: 10pt; line-height: 1.38; background: #fff; }
   .topbar, .skip, .print-btn, .swoosh, .sections .photo { display: none !important; }
